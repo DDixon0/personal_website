@@ -1,1 +1,1 @@
-alert("It's ya boy.. uhhhh skiny");
+alert("My personal Website is currently under construction");

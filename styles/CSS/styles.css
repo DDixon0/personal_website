@@ -8,6 +8,9 @@ body{
     padding: 0;
 }
 
+h1{
+    animation: fadein 3s;
+}
 .main_container{
     display: flex;
     height: 100vh;
@@ -84,3 +87,15 @@ li{
     padding: 13px;
 }
 
+
+
+#aboutme{
+    text-align: justify;
+    font-size: 15px;
+}
+
+/* Look into another type of animation I can use*/
+@keyframes fadein{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
