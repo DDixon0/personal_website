@@ -83,15 +83,25 @@ li{
 }
 
 .scrolling_content{
-    margin-top: 20px;
-    padding: 13px;
+    margin-top: 60px; 
+    /* Pushes the site down for the navbar. Hard Code = Bad Code, must fix */
+    /* padding: 13px; */
 }
 
 
 
 #aboutme{
     text-align: justify;
-    font-size: 15px;
+    font-size: 20px;
+    padding: 20px;
+    background-color: rgba(255, 221, 0, 0.486);
+}
+
+#aspirations{
+    text-align: justify;
+    font-size: 20px;
+    padding: 20px;
+    background-color: rgba(255, 221, 0, 0.486);
 }
 
 /* Look into another type of animation I can use*/
