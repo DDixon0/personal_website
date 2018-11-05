@@ -9,7 +9,13 @@ body{
 }
 
 h1{
-    animation: fadein 3s;
+    animation: fadein 8s;
+}
+
+h4{
+    font-size: 30px;
+    /* opacity: 0; */
+    animation: fadein 8s;
 }
 .main_container{
     display: flex;
