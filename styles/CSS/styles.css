@@ -9,9 +9,6 @@ body{
     /* font-family: 'Courier New', Courier, monospace; */
 }
 
-html {
-    scroll-behavior: smooth;
-}
 
 h1{
     animation: fadein 8s;
@@ -45,8 +42,8 @@ li a{
     /* display: inherit; */
     color: rgb(255, 255, 255);
     text-decoration: none;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
     display: flex;
     align-content: center;
 }
@@ -101,6 +98,7 @@ li{
     margin-top: 60px; 
     /* Pushes the site down for the navbar. Hard Code = Bad Code, must fix */
     /* padding: 13px; */
+    scroll-behavior: smooth;
 }
 
 

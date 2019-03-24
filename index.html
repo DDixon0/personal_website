@@ -5,118 +5,127 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Denzell Dixon</title>
+    <script src="styles/Javascripts/Javascript Resources/p5.min.js"></script>
+    <script src="styles/Javascripts/Javascript Resources/p5.sound.min.js"></script>
+    <script src="styles/Javascripts/Javascript Resources/p5.dom.min.js"></script>
     <link rel="stylesheet" href="styles/CSS/styles.css">
     <link rel="shortcut icon" href="styles/images/LogoMakr_9Ay3wX (1).png" type="image/x-icon">
-    <script src="styles/scripts/myscript.js" defer></script>
+    <script src="styles/Javascripts/myscript.js" defer></script>
 </head>
+
 <body>
 
-    <div class="main_container">
+   
+    <div id="animation">
+    <!-- p5.js animation that I created -->
+        <script src="styles/Javascripts/nsketch.js" type="text/javascript"></script>
+    </div>
+
+    <div id="taskbar">
+        <ul>
+            <li><a href="#aboutmeDiv">About Me</a></li>
+            <li><a href="#portfolioDiv">Portfolio</a></li>
+            <li><a href="#contactDiv">Contact</a></li>
+        </ul>        
+    </div>
+
+
+    <div id="aboutmeDiv" >
+
+        <h1>About</h1>
         
-        <div class="sidebar">
-            <!-- <img src="assets/chat.svg" alt="svg-icon"> -->
-            <h1>Welcome</h1>
-            <!-- <h4>Thank You for Visiting!</h4> -->
-        </div>
-        
+        <div id="leftsideDiv">
 
+            <h2>Who am I?</h2>
+            <p id = "aboutme">
+                <!-- I am a product of my abilities not my circumstances. -->
+                My name is Denzell Devonte Dixon, I am a programmer,
+                an immigrant, an astronomer and most of all an engineer.
+                I love computers, animation, programming, helping others and 
+                building things. I want to be a part of the future. I want to 
+                help build quantum computers, develop genetic algorithims and 
+                create the world's first artficial inteligence. But for now, I 
+                will settle with making my own personal website.
+                <!-- I am also a nerd, I am happy that you would 
+                    take time out of your day to look at my code. I hope it 
+                    suits your taste. If you would like to suggest changes, just
+                    fork and clone this on github.  
+                -->
+                <!-- Born too young to explore the world, too early to explore the Universe. -->
+            </p>
 
-        <div class="content">
+            <h2>Who do I want to be?</h2>
+            <p id = "aspirations">
+                <!-- The heights by great men reached and kept
+                    were not attained by sudden flight, but 
+                    they, while their companions slept, were 
+                    toiling upward in the night. 
+                -->
+                In college, I would like to study both Computer 
+                Science and Computer Engineering. I would like
+                to become an engineer that has a strong foundation
+                on both the cpu and the code. I believe as technology
+                ventures into a new type of computing, we will need
+                to go back to the drawing board. We will need to go
+                back to the transister so we can develop a new form 
+                of computing and a new future for technolgy. 
+            </p>
 
-            <div class="taskbar">
-                <ul>
-                    <li><a href="#aboutmeDiv">About Me</a></li>
-                    <li><a href="news.asp">Aspirations</a></li>
-                    <li><a href="about.asp">Something Else</a></li>
-                    <li><a href="https://github.com/DDixon0">GitHub</a></li>
-                    <li><a href="#ending">Contact</a></li>
-                </ul>
-            </div>
+            <h2>Partner in Crime</h2>
+            <p id = "partner">
+                <!-- Alone we can do so little; 
+                    together we can do so much. 
+                -->
+                When programming, there is a limit to how much that 
+                you can do by yourself. I have learned this 
+                the hard way. As a result of this, I have made many
+                friends in the programming field. Someone who I occasionaly
+                work together on programming projects with is my friend
+                Omar Cobas.
 
-            <div class="scrolling_content">
-
-                <div id="aboutmeDiv" >
-                    <h2>Who am I?</h2>
-                    <p id = "aboutme">
-                        <!-- I am a product of my abilities not my circumstances. -->
-                        My name is Denzell Devonte Dixon, I am a programmer,
-                        an immigrant, an astronomer and most of all an engineer.
-                        I love computers, animation, programming, helping others and 
-                        building things. I want to be a part of the future. I want to 
-                        help build quantum computers, develop genetic algorithims and 
-                        create the world's first artficial inteligence. But for now, I 
-                        will settle with making my own personal website.
-                        <!-- I am also a nerd, I am happy that you would 
-                            take time out of your day to look at my code. I hope it 
-                            suits your taste. If you would like to suggest changes, just
-                            fork and clone this on github.  
-                        -->
-                        <!-- Born too young to explore the world, too early to explore the Universe. -->
-                    </p>
-
-                    <!-- add image -->
-                </div>
-
-                <div id="aspirationsDiv" >
-                    <h2>Who do I want to be?</h2>
-                    <p id = "aspirations">
-                        <!-- The heights by great men reached and kept
-                            were not attained by sudden flight, but 
-                            they, while their companions slept, were 
-                            toiling upward in the night. 
-                        -->
-                        In college, I would like to study both Computer 
-                        Science and Computer Engineering. I would like
-                        to become an engineer that has a strong foundation
-                        on both the cpu and the code. I believe as technology
-                        ventures into a new type of computing, we will need
-                        to go back to the drawing board. We will need to go
-                        back to the transister so we can develop a new form 
-                        of computing and a new future for technolgy. 
-                    </p>
-
-                    <!-- maybe add an image of something futuristic -->
-                </div>
-
-                <div id="OmarDiv" >
-                    <h2>Partner in Crime</h2>
-                    <p id = "partner">
-                        <!-- Alone we can do so little; 
-                            together we can do so much. 
-                        -->
-                        When programming, there is a limit to how much that 
-                        you can do by yourself. I have learned this 
-                        the hard way. As a result of this, I have made many
-                        friends in the programming field. Someone who I occasionaly
-                        work together on programming projects with is my friend
-                        Omar Cobas.
-
-                        <!-- Include a link to his website -->
-                        <!-- https://omarasc5.github.io/modern_portfolio_repo -->
-                         
-                    </p>
-                </div>
-
-                <h2>Some Title</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus possimus eligendi laborum officia doloribus repellendus quisquam, error qui quo rerum dolores unde neque ducimus temporibus dolorum? Ullam, fugit maxime? Corrupti incidunt voluptas unde recusandae dignissimos voluptatum minus eos temporibus. Animi rerum maiores fugiat, dolorem ad neque doloremque ratione, architecto, autem itaque maxime amet! Quibusdam debitis sunt ab vel consectetur ullam eum dolores laboriosam ad perferendis, beatae hic adipisci veritatis inventore rem dolorem nemo placeat autem!</p>
-                <h2>Some Title</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus possimus eligendi laborum officia doloribus repellendus quisquam, error qui quo rerum dolores unde neque ducimus temporibus dolorum? Ullam, fugit maxime? Corrupti incidunt voluptas unde recusandae dignissimos voluptatum minus eos temporibus. Animi rerum maiores fugiat, dolorem ad neque doloremque ratione, architecto, autem itaque maxime amet! Quibusdam debitis sunt ab vel consectetur ullam eum dolores laboriosam ad perferendis, beatae hic adipisci veritatis inventore rem dolorem nemo placeat autem!</p>
-    
-                <h2>Some Title</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus possimus eligendi laborum officia doloribus repellendus quisquam, error qui quo rerum dolores unde neque ducimus temporibus dolorum? Ullam, fugit maxime? Corrupti incidunt voluptas unde recusandae dignissimos voluptatum minus eos temporibus. Animi rerum maiores fugiat, dolorem ad neque doloremque ratione, architecto, autem itaque maxime amet! Quibusdam debitis sunt ab vel consectetur ullam eum dolores laboriosam ad perferendis, beatae hic adipisci veritatis inventore rem dolorem nemo placeat autem!</p>
-        
-                <h2>Some Title</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus possimus eligendi laborum officia doloribus repellendus quisquam, error qui quo rerum dolores unde neque ducimus temporibus dolorum? Ullam, fugit maxime? Corrupti incidunt voluptas unde recusandae dignissimos voluptatum minus eos temporibus. Animi rerum maiores fugiat, dolorem ad neque doloremque ratione, architecto, autem itaque maxime amet! Quibusdam debitis sunt ab vel consectetur ullam eum dolores laboriosam ad perferendis, beatae hic adipisci veritatis inventore rem dolorem nemo placeat autem!</p>
-
-            </div>
+                <!-- Include a link to his website -->
+                <!-- https://omarasc5.github.io/modern_portfolio_repo -->    
+            </p>
 
         </div>
-    </div>
-        
-    
-    <div id="ending">
+
+        <div id="middleimgDiv">
+            <img src="" alt="">
+        </div>
+
+        <div id="rightsideDiv">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </div>
 
     </div>
+
+    <!-- Porfolio gallery like -->
+
+    <div id="portfolioDiv">
+        <h1>Projects</h1>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <!-- Gallery like contact -->
+
+    <div id="contactDiv">
+        <h1>Contact</h1>
+
+    </div>
+
+
+    <footer>
+        Copyright
+    </footer>
 
 </body>
 </html>
