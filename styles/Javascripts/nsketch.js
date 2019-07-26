@@ -11,24 +11,32 @@ p5.js.
 
 
 //Explosion class
-class Exploion{
-    constructor(x, y, color){
+class Explosion{
+    constructor(x, y){
     this.x = x;
     this.y = y;
-    this.color = color;
-    this.lifespan = 0;
+    this.lifespan = 1;
+    this.colorR = random(255);
+    this.colorG = random(255);
+    this.colorB = random(255);
     }
     explode(){
+        // console.log("color");
+        // console.log(this.colorB);
+        // console.log(this.colorG);
+        // console.log(this.colorR);
         
-        //fill(this.color); I want to add opacity so I will hard code this part
-        let c = color(255, 0, 0, 255 - 4.25*this.lifespan);
+        
+        //fill('rgb(this.colorR, this.colorG, this.colorB)'); //I want to add opacity so I will hard code this part
+        let c = color(this.colorR, this.colorG, this.colorB, 255*this.lifespan);
         fill(c);
-        ellipse(this.x, this.y, this.lifespan/1.5, this.lifespan/1.5);
-        this.lifespan+= 2;
 
-        if (this.lifespan >= 60){
+        if (this.lifespan <= 0){ // Cahnge this number to extended or shorten life
             explosions.splice(0,1);
         }
+        noStroke();
+        ellipse(this.x, this.y, 10* (1/this.lifespan), 10* (1/this.lifespan));
+        this.lifespan-= 0.001;// Cahnge this number to extended or shorten life
     }
     
 }
@@ -37,20 +45,25 @@ class Exploion{
 function setup(){
     let myCanvas = createCanvas(windowWidth,windowHeight);
     myCanvas.parent('animation');
-    background(0,0,0);
     W = width;
     H = height; 
 }
 
 let explosions = [];
 
+// I to create one random color rather than numbers. But, it's alright.
+/* 
+let colors = ["fuchia", "red", "blue", "orange", "green", "purple", "grey", "white"];
+let explosionC= colors[colorNumber];
+*/
+
 function draw(){
-    background(0,0,0);
+    background(255);
+
     if (frameCount % 60 == 0){ //Every like 2 seconds
-        let explosionX; //random rumber;
-        let explosionY; //random rumber;
-        let explosionC; //array of random colors that math th color pallet
-        explosions.push(new Exploion(explosionX, explosionY, explosionC));  
+        let explosionX = random(width); //random rumber;
+        let explosionY = random(height); //random rumber;  
+        explosions.push(new Explosion(explosionX, explosionY));  
     }
     
     //Exploding 
