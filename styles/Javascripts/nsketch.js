@@ -1,11 +1,11 @@
 /*
 Name:  Denzell Devonte Dixon
 
-Date: march 23rd, 2019 
+Date: July 26, 2019
 
-Program Name: Explosion Animation
+Program Name: Transit Logo Name
 
-Program Description: This animation of explosions using 
+Program Description: This animation of for my personal website. It will be the transit logo using
 p5.js.
 */
 
@@ -41,12 +41,23 @@ class Explosion{
     
 }
 
+let W, H;
+
+function preload(){
+    //load a font from a server
+    //have a backup font if anything
+}
+
 
 function setup(){
     let myCanvas = createCanvas(windowWidth,windowHeight);
     myCanvas.parent('animation');
     W = width;
     H = height; 
+
+    //textFont("Loaded font from server")
+    textSize(125);
+    textAlign(CENTER, CENTER);
 }
 
 let explosions = [];
@@ -60,16 +71,31 @@ let explosionC= colors[colorNumber];
 function draw(){
     background(255);
 
-    if (frameCount % 60 == 0){ //Every like 2 seconds
-        let explosionX = random(width); //random rumber;
-        let explosionY = random(height); //random rumber;  
-        explosions.push(new Explosion(explosionX, explosionY));  
+    //array of colors
+    let characterColors =["Orange", "Blue", "Yellow", "Brown", "Blue", "Grey", "Grey"];
+    let characterName = ["D","E","N","Z","E","L","L"];
+
+    for(let i = 0;  i <characterColors.length; i++){
+        let xShift = W* 0.75;
+        let plusShift = W*0.125;
+        let xPos = (xShift/(characterColors.length-1) * i)+ plusShift;
+        let yPos = H/2;
+        noStroke();
+        fill(characterColors[i]);
+        ellipse(xPos, yPos, 150, 150);
+        fill("white");
+        text(characterName[i],xPos,yPos);
     }
+
+
+    //Movement for trains
+    // if (frameCount % 60 == 0){ //Every like 2 seconds
+    //     let explosionX = random(width); //random rumber;
+    //     let explosionY = random(height); //random rumber;  
+    //     explosions.push(new Explosion(explosionX, explosionY));  
+    // }
     
-    //Exploding 
-    for (const boom of explosions){
-         boom.explode();
-    }
+    
     
 }
 

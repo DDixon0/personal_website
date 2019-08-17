@@ -1,0 +1,33 @@
+
+body{
+    margin: 0%;
+}
+
+/* Banner portion of the CSS */
+    #banner{
+        margin: 15% 0%;
+    }
+
+    #name{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .box{
+        width: 10vw;
+        height: 10vw;
+        border-radius: 50%;
+        text-align: center;
+    }
+
+    .letters{
+        margin: 0%;
+        padding: 3px;
+        font-family: Helvetica, Arial;
+        font-size: 8vw;
+        color: white;
+    }
+
+    /* Subway Lines Jquery Plugin */
+
