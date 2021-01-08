@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Denzell Dixon</title>
 
+    <!-- Load P5.js; Move this to links -->
     <script src="styles/Javascripts/Javascript Resources/p5.min.js"></script>
     <script src="styles/Javascripts/Javascript Resources/p5.sound.min.js"></script>
     <script src="styles/Javascripts/Javascript Resources/p5.dom.min.js"></script>
@@ -13,11 +14,18 @@
 
     <!-- <link rel="stylesheet" href="styles/CSS/styles.css"> -->
     <link rel="stylesheet" href="styles/CSS/main.css">
+
     <!-- Change image to subway D Train -->
     <link rel="shortcut icon" href="styles/images/favicon.ico" type="image/x-icon">
+
+    <!-- Font Awesome Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
+
+    <!-- Full page banner. -->
    
     <!-- p5.js animation that I created -->
     <!-- <div id="animation">
@@ -51,114 +59,271 @@
     </div>
 
 
-
-
-<!-- 
+    <!-- Navbar -->
     <div id="navbar">
-        <ul>
-            <li><a href="#aboutmeDiv">About Me</a></li>
-            <li><a href="#portfolioDiv">Portfolio</a></li>
-            <li><a href="#contactDiv">Contact</a></li>
-        </ul>        
+        <a href="#aboutmeDiv">Profile Place</a>
+        <a href="#abilitiesDiv">Abilities Avenue</a>
+        <!-- <a href="#experienceDiv">Experience Expressway</a> -->
+        <a href="#portfolioDiv">Porfolio Park</a>
+        <a href="#contactDiv">Contact Central</a>     
     </div>
 
+    <!-- About me div -->
+    <div id="aboutmeDiv" class="container">
 
-    <div id="aboutmeDiv" >
-
-        <h1>About</h1>
+        <h1>Profile Place</h1>
         
-        <div id="leftsideDiv">
+        <div id="mainAboutDiv">
+            <div id="leftsideDiv" class="aboutBox">
+                <h2>Who am I?</h2>
+                <p id = "aboutme">
+                    <!-- I am a product of my abilities not my circumstances.  -->
+                    My name is Denzell Devonte Dixon, I am a programmer,
+                    an immigrant, an astronomer and most of all an engineer.
+                    I love computers, animation, programming, helping others and 
+                    building things. I want to be a part of the future. I want to 
+                    help build quantum computers, develop genetic algorithims and 
+                    create the world's first artficial inteligence. But for now, I 
+                    will settle with making my own personal website.
+                         <!-- I am also a nerd, I am happy that you would 
+                        take time out of your day to look at my code. I hope it 
+                        suits your taste. If you would like to suggest changes, just
+                        fork and clone this on github.   -->
+                    
+                     <!-- Born too young to explore the world, too early to explore the Universe.  -->
+                </p>
+    
+                <!-- <h2>Who do I want to be?</h2>
+                <p id = "aspirations">
+                        The heights by great men reached and kept
+                        were not attained by sudden flight, but 
+                        they, while their companions slept, were 
+                        toiling upward in the night.
+                    
+                    In college, I would like to study both Computer 
+                    Science and Computer Engineering. I would like
+                    to become an engineer that has a strong foundation
+                    on both the cpu and the code. I believe as technology
+                    ventures into a new type of computing, we will need
+                    to go back to the drawing board. We will need to go
+                    back to the transister so we can develop a new form 
+                    of computing and a new future for technolgy. 
+                </p> -->
+        
+            </div>
+    
+            <div id="middleimgDiv" class="aboutBox">
+                <img src="styles\images\34255900.jpg" alt="Head Shot">
+            </div>
+    
+            <div id="rightsideDiv" class="aboutBox">
+                <h1>Details</h1>
+                <p>Name:</p>
+                <p>Denzell Dxion</p>
+                <p>Age:</p>
+                <!-- Auto update to get age -->
+                <p>19</p>
+                <p>Location:</p>
+                <p>New York City</p>
 
-            <h2>Who am I?</h2>
-            <p id = "aboutme">
-                 I am a product of my abilities not my circumstances. 
-                My name is Denzell Devonte Dixon, I am a programmer,
-                an immigrant, an astronomer and most of all an engineer.
-                I love computers, animation, programming, helping others and 
-                building things. I want to be a part of the future. I want to 
-                help build quantum computers, develop genetic algorithims and 
-                create the world's first artficial inteligence. But for now, I 
-                will settle with making my own personal website.
-                     I am also a nerd, I am happy that you would 
-                    take time out of your day to look at my code. I hope it 
-                    suits your taste. If you would like to suggest changes, just
-                    fork and clone this on github.  
+                <!-- Server call for the text -->
+
+                <!-- <h2>Partner in Crime</h2>
+                <p id = "partner">
+                    Alone we can do so little; 
+                        together we can do so much. 
                 
-                 Born too young to explore the world, too early to explore the Universe. 
-            </p>
+                    When programming, there is a limit to how much that 
+                    you can do by yourself. I have learned this 
+                    the hard way. As a result of this, I have made many
+                    friends in the programming field. Someone who I occasionaly
+                    work together on programming projects with is my friend
+                    Omar Cobas.
+    
+                    Include a link to his website
+                    https://omarasc5.github.io/modern_portfolio_repo    
+                </p> -->
 
-            <h2>Who do I want to be?</h2>
-            <p id = "aspirations">
-                 The heights by great men reached and kept
-                    were not attained by sudden flight, but 
-                    they, while their companions slept, were 
-                    toiling upward in the night. 
-                
-                In college, I would like to study both Computer 
-                Science and Computer Engineering. I would like
-                to become an engineer that has a strong foundation
-                on both the cpu and the code. I believe as technology
-                ventures into a new type of computing, we will need
-                to go back to the drawing board. We will need to go
-                back to the transister so we can develop a new form 
-                of computing and a new future for technolgy. 
-            </p>
-
-            <h2>Partner in Crime</h2>
-            <p id = "partner">
-                 Alone we can do so little; 
-                    together we can do so much. 
-            
-                When programming, there is a limit to how much that 
-                you can do by yourself. I have learned this 
-                the hard way. As a result of this, I have made many
-                friends in the programming field. Someone who I occasionaly
-                work together on programming projects with is my friend
-                Omar Cobas.
-
-                Include a link to his website
-                https://omarasc5.github.io/modern_portfolio_repo    
-            </p>
-
+            </div>
         </div>
-
-        <div id="middleimgDiv">
-            <img src="" alt="">
-        </div>
-
-        <div id="rightsideDiv">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </div>
+ 
 
     </div>
 
-     Porfolio gallery like 
-
-    <div id="portfolioDiv">
-        <h1>Projects</h1>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+    <!-- Abilities Section, a list -->
+    <div id="abilitiesDiv" class="container">
+        <h1>Abilities Avenue</h1>
+        <div id="columns">
+            <div id="column1">
+                <ul>
+                    <li class="skills">
+                        <p>HTML(5)</p>
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                    </li>
+                    <li class="skills">
+                        <p>CSS(3)</p>
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                    </li>
+                    <li class="skills">
+                        <p>Javascript</p>
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                    </li>
+                    <li class="skills">
+                        <p>P5.js</p>
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                    </li>
+                    <li class="skills">
+                        <p>Python 3</p>
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="column2">
+                <ul>
+                    <li class="skills">
+                        <p>Data Structures C++</p>
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                    </li>
+                    <li class="skills">
+                        <p>Computer Hardware</p>
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                    </li>
+                    <li class="skills">
+                        <p>Version Control: GitHub</p>
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                    </li>
+                    <li class="skills">
+                        <p>API's</p>
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                    </li>
+                    <li class="skills">
+                        <p>AGILE Development</p>
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 
-     Gallery like contact
+    <!-- Relevant tech experience -->
+    <!--     
+    <div id="experienceDiv" class="containr">
+        <h1>Experience Expressway</h1>
+    </div>
+    -->
+    <!-- Porfolio gallery like  -->
+    <div id="portfolioDiv" class="container">
+        <h1>Portfolio Park</h1>
 
-    <div id="contactDiv">
-        <h1>Contact</h1>
+        <div id="showcase">
+            <div class="project">
+                <img src="styles\images\logo_original.png" alt="CorText">
+                <div class="overlay">
+                    <div class="text">
+                        <a href="https://pure-brushlands-63188.herokuapp.com/index">CorText</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <img src="styles\images\Gimg_8.jpg" alt="Whitney Houston">
+                <div class="overlay">
+                    <div class="text">
+                        <a href="https://ddixon0.github.io/Project-1-WhitneyHouston/">Whitney</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <img src="styles\images\4.jpg" alt="Dog Book">
+                <div class="overlay">
+                    <div class="text">
+                        <div class="text">
+                            <a href="https://ddixon0.github.io/dogbook/">Dog Book</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <img src="styles\images\spaceEnemyImg.png" alt="Space Invader">
+                <div class="overlay">
+                    <div class="text">
+                        <a href="https://ddixon0.github.io/spaceInvader/">Space Invader</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <img src="styles\images\LogoMakr_29kBgqCC.png" alt="Steps">
+                <div class="overlay">
+                    <div class="text">
+                        <div class="text">
+                            <a href="https://ddixon0.github.io/STEPS/">Steps</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
 
+    <!-- How to contact me  -->
+    <div id="contactDiv" class="containr">
+        <h1>Contact Central</h1>
+        <p>You can contact me using my <a href="mailto:dixon.denzell@gmail.com">email</a>.</p>
     </div>
 
 
     <footer>
-        Copyright
-    </footer> -->
+        Copyright © 2021
+    </footer>
 
 </body>
 </html>

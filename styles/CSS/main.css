@@ -1,11 +1,25 @@
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     margin: 0%;
+    font-family: Helvetica, Courier New, Verdana;
+}
+
+.container{
+    margin: 2vh 2vw;
+    padding: 2% 4%;
 }
 
 /* Banner portion of the CSS */
     #banner{
-        margin: 15% 0%;
+        /* margin: 15% 0%; */
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: #f4ebd3;
     }
 
     #name{
@@ -29,5 +43,178 @@ body{
         color: white;
     }
 
-    /* Subway Lines Jquery Plugin */
+/* Navbar */
+/* Fix jumping thing. */
+    #navbar{
+        display: flex;
+        justify-content: space-between;
+        z-index: 3;
+        background: #f0ec1e;
+        overflow-x: hidden;
+        /* padding: 8px 0; */
+    }
+    #navbar a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #2196F3;
+        display: block;
+    }
+      
+    #navbar a:hover {
+        color: #000000;
+        /* Call animation */
+    }
+
+    /* Sticks the Navbar to top of page using javascript */
+    .stick{
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    .stick + .container{
+        padding-top:60px;
+    }
+/* About Me Section */
+    #aboutmeDiv{
+        max-width: 100vw;
+        /* display: flex;
+        flex-direction: column;
+        align-items: center; */
+
+    }
+
+    #aboutmeDiv h1{
+        text-align: center;
+
+    }
+
+    .aboutBox{
+        width: 25vw;
+    }
+
+    #mainAboutDiv{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #middleimgDiv img{
+        width: 25vw;
+        height: auto;
+        
+    }
+/* Abilities Section */
+    #abilitiesDiv h1{
+        text-align: center;
+    }
+    #columns{
+        display: flex;
+        justify-content: space-around;
+        /* bus logo */
+        /* list-style-type: url('');  */
+        /* list-style-type: square; */
+    }
+    /* #columns div{
+        width: 25vw;
+    } */
+    /* #columns ul{
+        list-style-type: square;
+    } */
+    /* .divskills{
+         width: 10vw;
+        display: flex; 
+        justify-content: space-between;
+    } */
+    .skills p{
+        margin: 0;
+        font-size: 20px;
+    }
+
+    .skills{
+        padding: 20px 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #columns div ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 25vw;
+    }
+    .star{
+        /* padding-left: 15%; */
+    }
+
+    /* FIx the abilities section buttons an dother stuff */
+
+
+/* Experience Expressway */
+    #experienceDiv h1{
+        text-align: center;
+    }
+    
+
+
+
+/* Project section */
+    #showcase{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    #portfolioDiv h1{
+        text-align: center;
+    }
+    .project{
+        /* max-width: 33%; */
+        position: relative;
+
+    }
+    .project img{
+        /* width: 100%; */
+        /* height: auto; */
+        /* Larger Pictures */
+        width: 25vw;
+        height: auto;
+    }
+    .overlay {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        opacity: 0;
+        transition: .5s ease;
+        /* background-color: #008CBA; */
+        z-index: 1;
+
+        /* for center */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* align-content: center; */
+      }
+    .project:hover .overlay {
+        opacity: 1;
+    }
+    .project:hover img {
+        opacity: 0.3;
+    }
+    .text{
+        color: #f0ec1e;
+    }
+/* Contact Section */
+    #contactDiv h1{
+        text-align: center;
+    }
+
+    #contactDiv p{
+        text-align: center;
+    }
+
+
+
+/* Subway Lines Jquery Plugin */
 
