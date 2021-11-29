@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
-<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
-<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+<html lang="en">
 <head>
     <title>Denzell Dixon | Budding Computer Engineer</title>
     <!-- Meta -->
@@ -9,154 +7,183 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="responsive personal website based on template">
-    <meta name="author" content="Denzell Dixon"> 
-    <meta name="licnese" content="3rd Wave Media">    
+    <meta name="author" content="Denzell Dixon">   
     <link rel="shortcut icon" href="favicon.ico">  
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
-    <!-- Global CSS -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
-    <!-- Plugins CSS -->
-    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
-    <!-- github acitivity css -->
-    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
-    <link rel="stylesheet" href="http://caseyscarborough.github.io/github-activity/github-activity-0.1.0.min.css">
     
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+    
+    <!-- FontAwesome JS -->
+    <script defer src="assets/fontawesome/js/all.js"></script>
+    
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">  
+    
+    <!-- github calendar css -->
+    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar-responsive.css">
+    <!-- github activity css -->  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">  
+    <link rel="stylesheet" href="assets/plugins/github-activity/src/github-activity.css">
+
     <!-- Theme CSS -->  
     <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
     
 </head> 
 
 <body>
     <!-- ******HEADER****** --> 
     <header class="header">
-        <div class="container">                       
-            <img class="profile-image img-responsive pull-left" src="assets/images/profile.png" alt="Denzell Dixon" />
-            <div class="profile-content pull-left">
-                <h1 class="name">Denzell Dixon</h1>
-                <h2 class="desc">Budding Computer Engineer</h2>   
-                <ul class="social list-inline">
-                    <!-- <li><a href="#"><i class="fa fa-twitter"></i></a></li>                    -->
-                    <!-- <li><a href="#"><i class="fa fa-google-plus"></i></a></li> -->
-                    <li><a href="https://www.linkedin.com/in/denzell-dixon-870594168/"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="https://github.com/DDixon0"><i class="fa fa-github-alt"></i></a></li>                  
-                    <!-- <li class="last-item"><a href="#"><i class="fa fa-hacker-news"></i></a></li>                  -->
-                </ul> 
-            </div><!--//profile-->
-            <a class="btn btn-cta-primary pull-right" href="mailto:dixon.denzell@gmail.com?subject=Website Contact" target="_blank"><i class="fa fa-paper-plane"></i> Contact Me</a>              
+        <div class="container">     
+	        <div class="row align-items-center">
+			    <div class="col">         
+		            <img class="profile-image img-fluid float-start rounded-circle" src="assets/images/profile.png" alt="profile image" />
+		            <div class="profile-content">
+                        <h1 class="name">Denzell Dixon</h1>
+                        <h2 class="desc">Budding Computer Engineer</h2>  
+		                <ul class="social list-inline">
+		                    <!-- <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li> -->
+		                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/denzell-dixon-870594168/"><i class="fab fa-linkedin-in"></i></a></li>
+		                    <li class="list-inline-item"><a href="https://github.com/DDixon0"><i class="fab fa-github-alt"></i></a></li>    
+		                    <!-- <li class="list-inline-item"><a href="#"><i class="fab fa-stack-overflow"></i></a></li>    -->
+		                    <!-- <li class="list-inline-item last-item"><a href="#"><i class="fab fa-codepen"></i></a></li>                 -->
+		                </ul> 
+		            </div><!--//profile-->
+			    </div><!--//col-->
+	            <div class="col-12 col-md-auto">
+		            <div class="dark-mode-switch d-flex">
+						<div class="form-check form-switch mx-auto mx-md-0">
+							<input type="checkbox" class="form-check-input me-2" id="darkSwitch" />
+							<label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+						</div>
+			        </div><!--//dark-mode-switch-->
+	                <a class="btn btn-cta-primary" href="mailto:dixon.denzell@gmail.com?subject=Website Contact" target="_blank"><i class="fas fa-paper-plane"></i> Contact Me</a>        
+	            </div><!--//col-->
+	        </div><!--//row-->         
         </div><!--//container-->
     </header><!--//header-->
     
-    <div class="container sections-wrapper">
+    <div class="container sections-wrapper py-5">
         <div class="row">
+
             <!-- Primary Column -->
-            <div class="primary col-md-8 col-sm-12 col-xs-12">
+            <div class="primary col-lg-8 col-12">
 
                 <!-- About Section -->
                 <section class="about section">
-                    <div class="section-inner">
+                    <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">About Me</h2>
                         <div class="content">
-                            <p>Write a brief intro about yourself. </p> 
-                            
-                            <p> My name is Denzell Devonte Dixon, I am a programmer, an immigrant, an astronomer and most of all an engineer. I love computers, animation, programming, helping others and building things. I want to be a part of the future. I want to help build quantum computers, develop genetic algorithims and create the world's first artficial inteligence. But for now, I will settle with making my own personal website.</p>
-         
-                            <p>It's a good idea to include your personal interests and hobbies as well. </p>
-                            
-                            <P> Something.</P>
+                            <p>Write a brief intro about yourself. It's a good idea to include your personal interests and hobbies as well. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec. Commodo ligula eget dolor. Aenean massa.</p>
+                            <p>My name is Denzell Devonte Dixon, I am a programmer, an immigrant, an astronomer and most of all an engineer. I love computers, animation, programming, helping others and building things. I want to be a part of the future. I want to help build quantum computers, develop genetic algorithims and create the world's first artficial inteligence. But for now, I will settle with making my own personal website.</p>
                         </div><!--//content-->
                     </div><!--//section-inner-->                 
                 </section><!--//section-->
                 
                 <!-- Latest Project Section -->
-               <section class="latest section">
-                    <div class="section-inner">
+                <section class="latest section">
+                    <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Latest Projects</h2>
                         <div class="content">    
                                                
                             <div class="item featured text-center">
-                                <h3 class="title"><a href="https://wrapbootstrap.com/theme/delta-promote-mobile-app-effectively-WB09R23P8?ref=3wm" target="_blank">KickStarter - Potato Salad App</a></h3>
-                                <p class="summary">A mobile app to help you make delicious potato salad</p>
-                                <div class="featured-image">
-                                    <a href="https://wrapbootstrap.com/theme/delta-promote-mobile-app-effectively-WB09R23P8?ref=3wm" target="_blank">
-                                    <img class="img-responsive project-image" src="assets/images/projects/project-featured.png" alt="project name" />
+                                
+                                <div class="featured-image has-ribbon">
+                                    <a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/launch-bootstrap-4-template-for-saas-businesses/" target="_blank">
+                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/project-featured.jpg" alt="project name" />
                                     </a>
                                     <div class="ribbon">
-                                        <div class="text">App</div>
-                                        </div>
+                                        <div class="text">New</div>
                                     </div>
+                                </div>
+                                
+                                <h3 class="title mb-3"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/launch-bootstrap-4-template-for-saas-businesses/" target="_blank">Launch - The perfect Bootstrap template for SaaS products</a></h3>
                                     
-                                <div class="desc text-left">                                    
-                                    <p>You can promote your main project here. Suspendisse in tellus dolor. Vivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim, eget iaculis ante dolor non turpis.</p>
-                                    <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. At vero eos et accusamus et iusto odio dignissimos ducimus.</p>
+                                <div class="desc text-start">                                    
+                                    <p>You can promote your main project here. Suspendisse in tellus dolor. Vivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim, eget iaculis ante dolor non turpis. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.</p>
                                 </div><!--//desc-->         
-                                <a class="btn btn-cta-secondary" href="https://wrapbootstrap.com/theme/delta-promote-mobile-app-effectively-WB09R23P8?ref=3wm" target="_blank"><i class="fa fa-thumbs-o-up"></i> Back my project</a>                 
+                                <a class="btn btn-cta-secondary" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/launch-bootstrap-4-template-for-saas-businesses/" target="_blank"><i class="fas fa-thumbs-up"></i> Back my project</a>                 
                             </div><!--//item-->
                             <hr class="divider" />
                             <div class="item row">
-                                <a class="col-md-4 col-sm-4 col-xs-12" href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-products-velocity/" target="_blank">
-                                <img class="img-responsive project-image" src="assets/images/projects/project-4.png" alt="project name" />
+                                <a class="col-md-4 col-12" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/coderpro-bootstrap-4-startup-template-for-software-projects/" target="_blank">
+                                <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/project-1.png" alt="project name" />
                                 </a>
-                                <div class="desc col-md-8 col-sm-8 col-xs-12">
-                                    <h3 class="title"><a href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-products-velocity/" target="_blank">Velocity - Designed for Products</a></h3>
-                                    <p>You can put one of your secondary projects here. Suspendisse in tellus dolor. Vivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim, eget iaculis ante dolor non turpis.</p>
-                                    <p><a class="more-link" href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-products-velocity/" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/coderpro-bootstrap-4-startup-template-for-software-projects/" target="_blank">CoderPro - Boootstrap Startup Template For Software Projects</a></h3>
+                                    <p class="mb-2">You can put one of your secondary projects here. Suspendisse in tellus dolor. Vivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim, eget iaculis ante dolor non turpis.</p>
+                                    <p><a class="more-link" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/coderpro-bootstrap-4-startup-template-for-software-projects/" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
                                 </div><!--//desc-->                          
                             </div><!--//item-->
                             
                             <div class="item row">
-                                <a class="col-md-4 col-sm-4 col-xs-12" href="https://wrapbootstrap.com/theme/tempo-designed-for-startups-WB07364T3?ref=3wm" target="_blank">
-                                <img class="img-responsive project-image" src="assets/images/projects/project-1.png" alt="project name" />
+                                <a class="col-md-4 col-12" href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/devcard-bootstrap-4-vcard-portfolio-template-for-software-developers/" target="_blank">
+                                <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/project-2.png" alt="project name" />
                                 </a>
-                                <div class="desc col-md-8 col-sm-8 col-xs-12">
-                                    <h3 class="title"><a href="https://wrapbootstrap.com/theme/tempo-designed-for-startups-WB07364T3?ref=3wm" target="_blank">Tempo - Designed for Startups</a></h3>
-                                    <p>You can put one of your secondary projects here. Suspendisse in tellus dolor. Vivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim, eget iaculis ante dolor non turpis.</p>
-                                    <p><a class="more-link" href="https://wrapbootstrap.com/theme/tempo-designed-for-startups-WB07364T3?ref=3wm" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/devcard-bootstrap-4-vcard-portfolio-template-for-software-developers/" target="_blank">DevCard - Boootstrap Portfolio Template for Software Developers</a></h3>
+                                    <p class="mb-2">You can put one of your secondary projects here. Suspendisse in tellus dolor. Vivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim, eget iaculis ante dolor non turpis.</p>
+                                    <p><a class="more-link" href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/devcard-bootstrap-4-vcard-portfolio-template-for-software-developers/" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                                </div><!--//desc-->                          
+                            </div><!--//item-->
+                            
+                             <div class="item row">
+                                <a class="col-md-4 col-12" href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/instance-bootstrap-portfolio-theme-for-developers/" target="_blank">
+                                <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/project-3.png" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/instance-bootstrap-portfolio-theme-for-developers/" target="_blank">Instance - Boootstrap Portfolio Template for Aspiring Full Stack Developers</a></h3>
+                                    <p class="mb-2">You can put one of your secondary projects here. Suspendisse in tellus dolor. Vivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim, eget iaculis ante dolor non turpis.</p>
+                                    <p><a class="more-link" href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/instance-bootstrap-portfolio-theme-for-developers/" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
                                 </div><!--//desc-->                          
                             </div><!--//item-->
                             
                             <div class="item row">
-                                <a class="col-md-4 col-sm-4 col-xs-12" href="https://wrapbootstrap.com/theme/delta-promote-mobile-app-effectively-WB09R23P8?ref=3wm" target="_blank">
-                                <img class="img-responsive project-image" src="assets/images/projects/project-2.png" alt="project name" />
+                                <a class="col-md-4 col-12" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/bootstrap-template-for-mobile-apps-nova-pro/" target="_blank">
+                                <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/project-4.png" alt="project name" />
                                 </a>
-                                <div class="desc col-md-8 col-sm-8 col-xs-12">
-                                    <h3 class="title"><a href="https://wrapbootstrap.com/theme/delta-promote-mobile-app-effectively-WB09R23P8?ref=3wm" target="_blank">Delta - Designed for Mobile Apps</a></h3>
-                                    <p> You can put one of your secondary projects here. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
-                                    <p><a class="more-link" href="https://wrapbootstrap.com/theme/delta-promote-mobile-app-effectively-WB09R23P8?ref=3wm" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/bootstrap-template-for-mobile-apps-nova-pro/" target="_blank">Nova Pro - Boootstrap Template for Mobile Startups</a></h3>
+                                    <p class="mb-2">You can put one of your secondary projects here. Suspendisse in tellus dolor. Vivamus a tortor eu turpis pharetra consequat quis non metus.</p>
+                                    <p><a class="more-link" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/bootstrap-template-for-mobile-apps-nova-pro/" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                                </div><!--//desc-->                          
+                            </div><!--//item-->                            
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devstudio-bootstrap-theme-for-web-development-agencies-and-developers/" target="_blank">
+                                <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/project-5.png" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devstudio-bootstrap-theme-for-web-development-agencies-and-developers/" target="_blank">DevStudio - Boootstrap Template for WebDev Agencies and Freelance Developers</a></h3>
+                                    <p class="mb-2"> You can put one of your secondary projects here. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.</p>
+                                    <p><a class="more-link" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devstudio-bootstrap-theme-for-web-development-agencies-and-developers/" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
                                 </div><!--//desc-->                          
                             </div><!--//item-->
                             
                         </div><!--//content-->  
-                    </div><!--//section-inner-->                 
+                    </div><!--//section-inner-->                
                 </section><!--//section-->
                 
-                <!-- Project Seleection Selection -->
+                <!-- Projects Section -->
                 <section class="projects section">
-                    <div class="section-inner">
+                    <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Other Projects</h2>
                         <div class="content">
                             <div class="item">
-                                <h3 class="title"><a href="#">Project Title Cras Lacus</a></h3>
+                                <h3 class="title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/free-bootstrap4-resume-cv-template-for-developers-pillar/" target="_blank">Pillar - Free Boootstrap Resume/CV Template for Developers</a> <span class="badge badge-theme">Free</span></h3>
                                 <p class="summary">Provide a brief description of your project. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatu.</p>
-                                <p><a class="more-link" href="https://wrapbootstrap.com/theme/delta-promote-mobile-app-effectively-WB09R23P8?ref=3wm" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
+                                <p><a class="more-link" href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/free-bootstrap4-resume-cv-template-for-developers-pillar/" target="_blank"><i class="fas fa-external-link-alt"></i>Download Now</a></p>
                             </div><!--//item-->
                             <div class="item">
-                                <h3 class="title"><a href="#">Project Title Cras eget lacus</a> <span class="label label-theme">Open Source</span></h3>
+                                <h3 class="title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/speciality/devblog-free-bootstrap-4-blog-template-for-developers/" target="_blank">DevBlog - Free Boootstrap Blog Template for Developers</a> <span class="badge badge-theme">Free</span></h3>
                                 <p class="summary">Provide a brief description of your project. Maecenas ornare ultricies risus, in fermentum augue consectetur in. Vestibulum vitae mauris iaculis, sollicitudin velit in, molestie nulla. </p>
-                                <p><a class="more-link" href="https://wrapbootstrap.com/theme/delta-promote-mobile-app-effectively-WB09R23P8?ref=3wm" target="_blank"><i class="fa fa-external-link"></i> View on GitHub</a></p>
+                                <p><a class="more-link" href="https://themes.3rdwavemedia.com/bootstrap-templates/speciality/devblog-free-bootstrap-4-blog-template-for-developers/" target="_blank"><i class="fas fa-external-link-alt"></i>Download Now</a></p>
                             </div><!--//item-->
                             <div class="item">
-                                <h3 class="title"><a href="#">Project Title Maecenas Ornare</a> <span class="label label-theme">Open Source</span></h3>
+                                <h3 class="title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/nova-bootstrap-landing-page-template-for-mobile-apps/" target="_blank">Nova - Free App Landing Page Template for App Developers</a> <span class="badge badge-theme">Free</span></h3>
                                 <p class="summary">Provide a brief description of your project. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel purus enim. Etiam tortor felis, fermentum ac ultrices sed.</p>
-                                <p><a class="more-link" href="https://wrapbootstrap.com/theme/delta-promote-mobile-app-effectively-WB09R23P8?ref=3wm" target="_blank"><i class="fa fa-external-link"></i> View on GitHub</a></p>
+                                <p><a class="more-link" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/nova-bootstrap-landing-page-template-for-mobile-apps/" target="_blank"><i class="fas fa-external-link-alt"></i>Download Now</a></p>
                             </div><!--//item-->
                             
-                            <a class="btn btn-cta-secondary" href="#">More on CoderWall <i class="fa fa-chevron-right"></i></a>
+                            <a class="btn btn-cta-secondary" href="#">More on GitHub <i class="fas fa-chevron-right pt-1"></i></a>
                             
                         </div><!--//content-->  
                     </div><!--//section-inner-->                 
@@ -164,52 +191,58 @@
                 
                 <!-- Experience Section -->
                 <section class="experience section">
-                    <div class="section-inner">
+                    <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Work Experience</h2>
                         <div class="content">
                             <div class="item">
-                                <h3 class="title">Co-Founder & Lead Developer - <span class="place"><a href="#">Startup Hub</a></span> <span class="year">(2014 - Present)</span></h3>
+                                <h3 class="title">Co-Founder & Lead Developer - <span class="place"><a href="#">Startup Hub</a></span> <span class="year">(2020 - Present)</span></h3>
                                 <p>Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.</p>
                             </div><!--//item-->
                             <div class="item">
-                                <h3 class="title">Software Engineer - <span class="place"><a href="#">Google</a></span> <span class="year">(2013 - 2014)</span></h3>
+                                <h3 class="title">Software Engineer - <span class="place"><a href="#">Google</a></span> <span class="year">(2019 - 2020)</span></h3>
                                 <p>Vivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.</p>
                             </div><!--//item-->
                             
                             <div class="item">
-                                <h3 class="title">Software Engineer - <span class="place"><a href="#">eBay</a></span> <span class="year">(2012 - 2013)</span></h3>
+                                <h3 class="title">Software Engineer - <span class="place"><a href="#">eBay</a></span> <span class="year">(2018 - 2019)</span></h3>
                                 <p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
                             </div><!--//item-->
                             
                         </div><!--//content-->  
                     </div><!--//section-inner-->                 
                 </section><!--//section-->
+
+                <!-- GitHub Section -->
                 <section class="github section">
-                    <div class="section-inner">
+                    <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">My GitHub</h2>
-                        <p>You can embed your GitHub activities using Casey Scarborough's <a href="http://caseyscarborough.com/projects/github-activity/" target="_blank">GitHub Activity Stream</a> widget. You can also take a screenshot of your GitHub chart and put it here for fun.</p>
-                        <p><a href="#"><img class="img-responsive" src="assets/images/github-chart.png" alt="GitHub Contributions Chart" /></a></p>               
-                        <!--//Usage: http://caseyscarborough.com/projects/github-activity/ -->                       
+                        <p>You can embed your GitHub contribution graph calendar using IonicaBizau's <a href="https://github.com/IonicaBizau/github-calendar" target="_blank">GitHub Calendar</a> widget. 
+                        
+                        <div id="github-graph" class="github-graph">
+
+                        </div><!--//github-graph-->
+
+                        <p>You can also embed your GitHub activities using Casey Scarborough's <a href="https://github.com/caseyscarborough/github-activity" target="_blank">GitHub Activity Stream</a> widget.        
+                        <!--//Usage: https://caseyscarborough.com/projects/github-activity/ -->                       
                         <div id="ghfeed" class="ghfeed">
-                        </div><!--//ghfeed--> 
+                        </div><!--//ghfeed-->
+                        
                     </div><!--//secton-inner-->
                 </section><!--//section-->
-
             </div><!--//primary-->
 
             <!-- Secondary Column -->
-            <div class="secondary col-md-4 col-sm-12 col-xs-12">
+            <div class="secondary col-lg-4 col-12">
 
-                <!-- Basic Information Section -->
+                <!-- Basic Information -->
                 <aside class="info aside section">
-                    <div class="section-inner">
+                    <div class="section-inner shadow-sm rounded">
                         <h2 class="heading sr-only">Basic Information</h2>
                         <div class="content">
                             <ul class="list-unstyled">
-                                <li><i class="fa fa-map-marker"></i><span class="sr-only">Location:</span>Brooklyn, NY</li>
-                                <li><i class="fa fa-envelope-o"></i><span class="sr-only">Email:</span><a href="#">dixon.denzell@gmail.com</a></li>
-                                <!-- Possible Change Link -->
-                                <li><i class="fa fa-link"></i><span class="sr-only">Website:</span><a href="https://www.linkedin.com/in/denzell-dixon-870594168/">http://www.linkedin.com</a></li>
+                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>Brooklyn, NY</li>
+                                <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a href="#">dixon.denzell@gmail.com</a></li>
+                                <li><i class="fas fa-link"></i><span class="sr-only">Linkedin:</span><a href="https://www.linkedin.com/in/denzell-dixon-870594168/">http://www.linkedin.com</a></li>
                             </ul>
                         </div><!--//content-->  
                     </div><!--//section-inner-->                 
@@ -217,93 +250,89 @@
                 
                 <!-- Skills Section -->
                 <aside class="skills aside section">
-                    <div class="section-inner">
+                    <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Skills</h2>
                         <div class="content">
                             <p class="intro">
-                                Intro about your skills goes here. Keep the list lean and only show your primary skillset. You can always provide a link to your Linkedin or Coderwall profile so people can get more info there.</p>
+                                Intro about your skills goes here. Keep the list lean and only show your primary skillset. You can always provide a link to your Linkedin or Github profile so people can get more info there.</p>
                             
                             <div class="skillset">
                                
                                 <div class="item">
-                                    <h3 class="level-title">Python &amp; Django<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to add more info...">Expert</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="96%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
+                                    <h3 class="level-title">Python &amp; Django<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Expert</span></h3>
+
+                                    <div class="level-bar progress">
+									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 96%" aria-valuenow="96"  aria-valuemin="0" aria-valuemax="96"></div>
+									</div><!--//level-bar-->                               
                                 </div><!--//item-->
                                 
                                 <div class="item">
-                                    <h3 class="level-title">Javascript &amp; jQuery<span class="level-label">Expert</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="96%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
+                                    <h3 class="level-title">Javascript &amp; jQuery<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Expert</span></h3>
+                                    <div class="level-bar progress">
+									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 94%" aria-valuenow="94"  aria-valuemin="0" aria-valuemax="94"></div>
+									</div><!--//level-bar-->                                   
                                 </div><!--//item-->
                                 
                                 <div class="item">
-                                    <h3 class="level-title">HTML5, CSS3, SASS &amp; LESS<span class="level-label">Expert</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="96%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
+                                    <h3 class="level-title">HTML5, CSS3, SASS &amp; LESS<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Expert</span></h3>
+                                    <div class="level-bar progress">
+									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 93%" aria-valuenow="93"  aria-valuemin="0" aria-valuemax="96"></div>
+									</div><!--//level-bar-->                                  
                                 </div><!--//item-->
                                 
                                 <div class="item">
-                                    <h3 class="level-title">Ruby on Rails<span class="level-label">Pro</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="85%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
+                                    <h3 class="level-title">Ruby on Rails<span class="level-label" data-bs-toggle="tooltip" data-placement="left" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Pro</span></h3>
+                                    <div class="level-bar progress">
+									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 86%" aria-valuenow="86"  aria-valuemin="0" aria-valuemax="96"></div>
+									</div><!--//level-bar-->                                  
                                 </div><!--//item-->
                                 
-                                <p><a class="more-link" href="#"><i class="fa fa-external-link"></i> More on Coderwall</a></p> 
+                                <p><a class="more-link" href="#"><i class="fas fa-external-link-alt"></i>More on GitHub</a></p> 
                             </div>              
                         </div><!--//content-->  
                     </div><!--//section-inner-->                 
                 </aside><!--//section-->
-                
-                <!-- Comment this out until future Testimonial
-                
-                Testimonials Section
+
+                <!-- Testimonials Section -->
+                <!--
                 <aside class="testimonials aside section">
-                    <div class="section-inner">
+                    <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Testimonials</h2>
                         <div class="content">
                             <div class="item">
                                 <blockquote class="quote">                                  
-                                    <p><i class="fa fa-quote-left"></i>James is an excellent software engineer and he is passionate about what he does. You can totally count on him to deliver your projects!</p>
+                                    <p><i class="fas fa-quote-left"></i>James is an excellent software engineer and he is passionate about what he does. You can totally count on him to deliver your projects!</p>
                                 </blockquote>                
                                 <p class="source"><span class="name">Tim Adams</span><br /><span class="title">Curabitur commodo</span></p>                                                             
                             </div>//item
                             
-                            <p><a class="more-link" href="#"><i class="fa fa-external-link"></i> More on Linkedin</a></p> 
+                            <p><a class="more-link" href="#"><i class="fas fa-external-link-alt"></i>More on Linkedin</a></p> 
                             
                         </div>//content
                     </div>//section-inner
                 </aside>//section
                 -->
-
-                <!-- Education Seciton -->
+                
+                <!-- Education Section -->
                 <aside class="education aside section">
-                    <div class="section-inner">
+                    <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Education</h2>
                         <div class="content">
                             <div class="item">                      
-                                <h3 class="title"><i class="fa fa-graduation-cap"></i> BSc Computer Engineering and Computer Science</h3>
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> BSc Computer Engineering and Computer Science</h3>
                                 <h4 class="university">Rensselaer Polytechnic Institute <span class="year">(2019-2023)</span></h4>
                             </div><!--//item-->
                             <div class="item">
-                                <h3 class="title"><i class="fa fa-graduation-cap"></i> High School Degree</h3>
-                                <h4 class="university">Avenues: New York<span class="year">(2017-2019)</span></h4>
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> High School Degree</h3>
+                                <h4 class="university">Avenues: New York <span class="year">(2017-2019)</span></h4>
                             </div><!--//item-->
                         </div><!--//content-->
                     </div><!--//section-inner-->
                 </aside><!--//section-->
                 
-                <!-- Spoken Language Section -->
+                <!-- Language Section -->
                 <aside class="languages aside section">
-                    <div class="section-inner">
+                    <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Languages</h2>
                         <div class="content">
                             <ul class="list-unstyled">
@@ -321,30 +350,30 @@
                                 </li><!--//item-->
                                 <li class="item">
                                     <span class="title"><strong>Chinese:</strong></span>
-                                    <span class="level">Novice<br class="visible-sm visible-xs"/><i class="fa fa-star"></i> </i></span>
+                                    <span class="level">Novice <br class="visible-sm visible-xs"/><i class="fa fa-star"></i> </i></span>
                                 </li><!--//item-->
                             </ul>
                         </div><!--//content-->
                     </div><!--//section-inner-->
                 </aside><!--//section-->
                 
-                <!-- If I choose to make a blog post. Keep this in  case
-                Blog Section 
+                <!-- Blog Post Section, I do not have a blog, maybe I should try one -->
+                <!--
                 <aside class="blog aside section">
-                    <div class="section-inner">
+                    <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Latest Blog Posts</h2>
-                        <p>You can use Sascha Depold's <a href="https://github.com/sdepold/jquery-rss" target="_blank">jQuery RSS plugin</a> to pull in your blog post feeds.</p>
+                        <p>You can use Sascha Depold's <a href="https://github.com/sdepold/jquery-rss" target="_blank">Vanilla RSS plugin</a> to pull in your blog post feeds.</p>
                         <div id="rss-feeds" class="content">
 
-                        </div>//content
-                    </div>//section-inner
-                </aside>//section
+                        </div><!- -//content- ->
+                    </div><!- -//section-inner- ->
+                </aside><!- -//section- ->
                 -->
-
-                <!-- Coding Music Section -->
+                
+                <!-- Music Section -->
                 <aside class="list music aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Favorite Coding Music</h2>
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Favorite coding music</h2>
                         <div class="content">
                             <ul class="list-unstyled">
                                 <li><i class="fa fa-music"></i> <a href="https://open.spotify.com/track/1q1czFTQvKFTlNGXO4qLUj?si=ca191e45e89a4b05">Young Black America - Meek Mill</a></li>
@@ -358,66 +387,70 @@
                 </aside><!--//section-->
                 
                 <!-- Conference Section -->
+                <!--
                 <aside class="list conferences aside section">
-                    <div class="section-inner">
+                    <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Conferences</h2>
                         <div class="content">
                             <ul class="list-unstyled">
-                                <li><i class="fa fa-calendar"></i> <a href="https://developer.apple.com/wwdc/" target="_blank">WWDC 2014</a> (San Francisco)</li>
-                                <li><i class="fa fa-calendar"></i> <a href="http://hive.aigaseattle.org/">Hive</a> (Seattle)</li>
+                                <li><i class="far fa-calendar-alt"></i> <a href="#" target="_blank">WWDC 2030</a> (San Francisco)</li>
+                                <li><i class="far fa-calendar-alt"></i> <a href="#">Hive</a> (Seattle)</li>
                             </ul>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-                
+                        </div><!- -//content- ->
+                    </div><!- -//section-inner- ->
+                </aside><!- -//section- ->
+                -->
+
                 <!-- Credits Section -->
                 <aside class="credits aside section">
-                    <div class="section-inner">
+                    <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Credits</h2>
                         <div class="content">
-                            <ul class="list-unstyled">
-                                <li><a href="http://getbootstrap.com/" target="_blank"><i class="fa fa-external-link"></i> Bootstrap 3.2</a></li>
-                                <li><a href="http://fortawesome.github.io/Font-Awesome/" target="_blank"><i class="fa fa-external-link"></i> FontAwsome 4.1</a></li>
-                                <li><a href="http://jquery.com/" target="_blank"><i class="fa fa-external-link"></i> jQuery</a></li>
-                                <li><a href="http://caseyscarborough.com/projects/github-activity/" target="_blank"><i class="fa fa-external-link"></i> GitHub Activity Stream</a></li>
+                            <ul class="list-unstyled pb-2">
+                                <li><a href="https://getbootstrap.com/" target="_blank"><i class="fas fa-external-link-alt"></i>Bootstrap</a></li>
+                                <li><a href="https://fortawesome.github.io/Font-Awesome/" target="_blank"><i class="fas fa-external-link-alt"></i>FontAwesome</a></li>
+                                <li><a href="https://github.com/IonicaBizau/github-calendar" target="_blank"><i class="fas fa-external-link-alt"></i>GitHub Calendar Plugin</a></li>
                                 
-                                <li><a href="https://github.com/sdepold/jquery-rss" target="_blank"><i class="fa fa-external-link"></i> jQuery RSS</a></li>
+                                <li><a href="https://caseyscarborough.com/projects/github-activity/" target="_blank"><i class="fas fa-external-link-alt"></i>GitHub Activity Stream</a></li>
                                 
-                                <li>Profile image: <a href="https://www.flickr.com/photos/dotbenjamin/2577394151" target="_blank">Ben Smith</a></li>
-                                <li>iPad and iPhone mocks: <a href="https://dribbble.com/perlerar" target="_blank">Regy Perlera</a></li>
+                                <li><a href="https://github.com/sdepold/vanilla-rss" target="_blank"><i class="fas fa-external-link-alt"></i>Vanilla RSS</a></li>
+                                <li><a href="https://github.com/coliff/dark-mode-switch"><i class="fas fa-external-link-alt"></i>Dark Mode Switch</a></li>
                                 
                             </ul>
                             
                             <hr/>
                             
-                             <p>This responsive HTML5 CSS3 site template is handcrafted by UX designer <a href="https://www.linkedin.com/in/xiaoying" target="_blank">Xiaoying Riley</a> at <a href="http://themes.3rdwavemedia.com/" target="_blank">3rd Wave Media</a> for developers and is <strong>FREE</strong> under the <a class="dotted-link" href="http://creativecommons.org/licenses/by/3.0/" target="_blank">Creative Commons Attribution 3.0 License</a></p>
-                             <p>We will improve or add new features to this template based on users' feedback so follow us on twitter to get notified when a new version is out!</p>
-                            <a class="btn btn-cta-secondary btn-follow" href="https://twitter.com/3rdwave_themes" target="_blank"><i class="fa fa-twitter"></i> Follow us</a>
-                            <a class="btn btn-cta-primary btn-download" href="http://themes.3rdwavemedia.com/website-templates/free-responsive-website-template-for-developers/" target="_blank"><i class="fa fa-download"></i> I want to download</a>
+                             <p class="pt-2">This Boootstrap portfolio template is handcrafted by UX designer Xiaoying Riley</a> at <a href="https://themes.3rdwavemedia.com/" target="_blank">3rd Wave Media</a> for developers and is <strong>FREE</strong> to use as long as you keep the footer attribution link. If you’d like to <strong>use this template as well</strong>, you can click the button below</a>.</p>
+                             
+                             <a class="btn btn-cta-primary btn-download" href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/free-bootstrap-portfolio-theme-for-web-developers/" target="_blank"><i class="fas fa-external-link-alt"></i> I want to download</a>
+                            
                         </div><!--//content-->
                     </div><!--//section-inner-->
                 </aside><!--//section-->
               
-            </div><!--//secondary-->    
+            </div><!--//secondary--> 
+
         </div><!--//row-->
     </div><!--//masonry-->
     
     <!-- ******FOOTER****** --> 
     <footer class="footer">
         <div class="container text-center">
-                <!-- <small class="copyright">Designed with <i class="fab fa-creative-commons-pd"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">3rd Wave Media</a> for developers</small> -->
-                <small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">3rd Wave Media</a> for developers</small>
+                <!--/* This template is free as long as you keep the attribution link below. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
+                <small class="copyright">Designed with <i class="fas fa-heart"></i> by <a href="https://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
         </div><!--//container-->
     </footer><!--//footer-->
  
     <!-- Javascript -->          
-    <script type="text/javascript" src="assets/plugins/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/popper.min.js"></script> 
     <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
-    <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script> 
+    <script type="text/javascript" src="assets/plugins/vanilla-rss/dist/rss.global.min.js"></script> 
+    <script type="text/javascript" src="assets/plugins/dark-mode-switch/dark-mode-switch.min.js"></script> 
+    <!-- github calendar plugin -->
+    <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
     <!-- github activity plugin -->
-    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
-    <script type="text/javascript" src="http://caseyscarborough.github.io/github-activity/github-activity-0.1.0.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/github-activity/src/github-activity.js"></script>
     <!-- custom js -->
     <script type="text/javascript" src="assets/js/main.js"></script>            
 </body>
