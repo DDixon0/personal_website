@@ -1,0 +1,14 @@
+{
+  "name": "dixon-personal-website",
+  "version": "1.0.0",
+  "description": "Plugins for my personal website.",
+  "main": "popper.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Denzell Dixon",
+  "license": "ISC",
+  "dependencies": {
+    "github-calendar": "^2.2.9"
+  }
+}
