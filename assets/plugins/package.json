@@ -9,6 +9,7 @@
   "author": "Denzell Dixon",
   "license": "ISC",
   "dependencies": {
+    "github-activity-feed": "^0.3.0",
     "github-calendar": "^2.2.9"
   }
 }
